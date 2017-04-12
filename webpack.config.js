@@ -46,9 +46,6 @@ module.exports = {
       '/api*': 'http://localhost:3000',
     }
   },
-  eslint: {
-    configFile: './.eslintrc'
-  },
   plugins: [
   ]
 };
