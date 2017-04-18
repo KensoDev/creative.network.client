@@ -11,10 +11,12 @@ import Home from './components/Home';
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
+require("./styles/common.less");
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/t" component={App}>
+      <Route path="/" component={App}>
         <IndexRoute component={Home} />
       </Route>
     </Router>
