@@ -1,0 +1,15 @@
+.navbar {
+  text-align: center;
+  .logo {
+    background-image: url("./img/logo.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: block;
+    span {
+      position: absolute;
+      left: -2000px;
+    }
+  }
+}

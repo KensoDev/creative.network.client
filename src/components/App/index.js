@@ -1,12 +1,12 @@
 import React from 'react';
 
+import Navigation from '../Navigation';
+
 export default function App({ children }) {
   return (
-    <div className="app">
-      <div>
-        <h1>This is a react app</h1>
-      </div>
-      <div>
+    <div className="container">
+      <div className="row">
+        <Navigation />
         { children }
       </div>
     </div>

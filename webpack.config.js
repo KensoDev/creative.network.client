@@ -18,7 +18,7 @@ module.exports = {
     },
     {
       test: /\.(scss|css)$/,
-      loader: "style!css!sass?includePaths[]=" + path.resolve(__dirname, "./node_modules/compass-mixins/lib")
+      loader: "style-loader!css-loader!sass-loader?includePaths[]=" + path.resolve(__dirname, "./node_modules/compass-mixins/lib")
     },
     {
       test: /\.less$/,
