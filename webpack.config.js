@@ -43,7 +43,7 @@ module.exports = {
     hot: true,
     historyApiFallback: true,
     proxy: {
-      '/api*': 'http://localhost:3000',
+      '/graphql*': 'http://localhost:3000',
     }
   },
   plugins: [

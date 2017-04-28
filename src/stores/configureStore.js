@@ -14,6 +14,6 @@ middleware.push(router);
 export default function configureStore(initialState) {
   return createStore(rootReducer, initialState, compose(
     applyMiddleware(...middleware),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   ));
 }

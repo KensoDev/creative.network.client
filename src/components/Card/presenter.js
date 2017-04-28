@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 
 class Card extends Component {
   render() {
+    const { topic } = this.props;
     return (
       <div className="card film art">
         <a href="portfolio-item.html" className="thumb">
-          <img src={require("../../img/sample/sintel/sample-sintel-1.jpg")} alt="" title="" />
+          <img src={topic.thumbnail} alt="" title="" />
           <span className="overlay"><span className="fa fa-search"></span></span>
         </a>
         <div className="card-body">
-          <h2><a href="portfolio-item.html">Sintel at Seattle International Film Festival</a></h2>
-          <p>The cinema where Sintel screens has digital 4k projection, I’m working with them getting this formatted right and delivered. Would be a real ...</p>
+          <h2><a href="portfolio-item.html">{ topic.title }</a></h2>
+          <p>{ topic.description }</p>
           <p><a href="portfolio-item.html">Read More</a></p>
         </div>
         <div className="card-footer">
